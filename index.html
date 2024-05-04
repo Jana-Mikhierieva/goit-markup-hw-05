@@ -537,5 +537,102 @@
         </div>
       </div>
     </footer>
+    <!--===========================backdrop=============================-->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="close-modal-btn" type="button">
+          <svg class="icon-close-modal-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp"
+          </svg>
+        </button>
+        <p class="call-request-form-description">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="call-request-form" autocomplete="on">
+          <div class="call-request-form-field-wrapper">
+            <label for="username" class="call-request-form-field-label"
+              >Name</label
+            >
+            <div class="call-request-form-input-wrapper">
+              <input
+                type="text"
+                class="call-request-form-field-input"
+                name="username"
+                id="username"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+                title="Yana"
+              />
+              <svg class="call-request-form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-person-black-18dp"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="call-request-form-field-wrapper">
+            <label for="tel-number" class="call-request-form-field-label"
+              >Phone</label
+            >
+            <div class="call-request-form-input-wrapper">
+              <input
+                type="tel"
+                class="call-request-form-field-input"
+                name="tel-number"
+                id="tel-number"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg class="call-request-form-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-phone-black-18dp"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="call-request-form-field-wrapper">
+            <label for="user-email" class="call-request-form-field-label"
+              >Email</label
+            >
+            <div class="call-request-form-input-wrapper">
+              <input
+                type="email"
+                class="call-request-form-field-input"
+                name="user-email"
+                id="user-email"
+                required
+              />
+              <svg class="call-request-form-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-email-black-18dp"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="call-request-form-field-wrapper">
+            <label for="user-comment" class="call-request-form-field-label"
+              >Comment</label
+            >
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="call-request-form-message"
+              placeholder="Text input"
+            >
+            </textarea>
+          </div>
+          <div class="call-request-form-field-wrapper">
+            <input
+              type="checkbox"
+              class="call-request-form-checkbox"
+              name="privacy-policy"
+              id="privacy-policy"
+              value="true"
+              required
+            />
+            <label for="privacy-policy"
+              >I accept the terms and conditions of the
+              <a href="" class="privacy-policy-link">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="call-request-form-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
