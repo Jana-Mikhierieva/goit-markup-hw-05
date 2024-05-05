@@ -535,10 +535,21 @@
             </li>
           </ul>
         </div>
+        <div class="footer-block-subscrib">
+          <p class="footer-text-subscribe">Subscribe</p>
+          <form
+            class="footer-form-subscribe"
+            name="user-subscribe"
+            autocomplete="on"
+          >
+            <input type="email" class="footer-form-subscribe-input" />
+            <button class="footer-form-subscribe-btn"></button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--===========================backdrop=============================-->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="close-modal-btn" type="button">
           <svg class="icon-close-modal-btn" width="8" height="8">
@@ -604,7 +615,7 @@
               </svg>
             </div>
           </div>
-          <div class="call-request-form-field-wrapper">
+          <div class="call-request-form-textarea-wrapper">
             <label for="user-comment" class="call-request-form-field-label"
               >Comment</label
             >
@@ -613,19 +624,22 @@
               id="user-comment"
               class="call-request-form-message"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </div>
-          <div class="call-request-form-field-wrapper">
+          <div class="call-request-form-checkbox-wrapper">
             <input
               type="checkbox"
-              class="call-request-form-checkbox"
+              class="call-request-form-checkbox visually-hidden"
               name="privacy-policy"
               id="privacy-policy"
               value="true"
               required
             />
-            <label for="privacy-policy"
+            <label class="call-request-form-checkbox-label" for="privacy-policy"
+              ><span class="custom-checkbox-form">
+                <svg class="custom-checkbox-form-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-click"></use>
+                </svg> </span
               >I accept the terms and conditions of the
               <a href="" class="privacy-policy-link">Privacy Policy</a>
             </label>
